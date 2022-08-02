@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+        // imc = peso / (altura * altura)
+        function imc(peso, altura) {
+            var imc = peso / (altura * altura);
+
+            if (imc < 18.5) {
+                console.log("Abaixo do peso, seu imc é ", imc)
+            } else if (imc >= 18.5 && imc < 25) {
+                console.log("Peso normal, o imc é ", imc)
+            } else if (imc >= 25 && imc < 30) {
+                console.log("Sobrepeso, o imc é ", imc)
+            } else if (imc >= 30 && imc < 35) {
+                console.log("Obesidade Grau I, o imc é ", imc)
+            }  else if (imc >= 35 && imc < 40) {
+                console.log("Obesidade Grau II, o imc é ", imc)
+            }  else {
+                console.log("Obesidade Grau III ou Mórbida, o imc é ", imc)
+            };
+
+
+            return imc;
+        }
+    
+        
+    </script>
+    
+</body>
+</html>

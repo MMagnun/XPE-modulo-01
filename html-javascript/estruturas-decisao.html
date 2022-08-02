@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Decisão</title>
+</head>
+<body>
+    <script> 
+    
+    var a = 50; 
+    var b = 50;
+/*
+    if (a > b)  {
+        console.log("a maior do que b");
+    }    else {
+        console.log("a não é maior do que b");
+    }
+    */
+
+
+/*NOTAS
+Comparadores e tipos:
+
+o sinal de "=" serve para atribuir valor a uma variavel. 
+ex.: var A = 1, (A recebe o valor de 1)
+
+== serve para comparar dados e eh utilizado em condicionais. (if, else if, else) 
+A = 10;
+B = "10"
+
+nesse caso A == B eh verdadeiro
+
+=== compara valores e tipos de dados 
+A = 10;
+B = "10"
+A === B eh falso, pois A eh numero inteiro e B eh string (entendido como caractere e nao valor numerico).
+
+!= compara se o valor eh diferente 
+A = 10;
+B = "10" 
+
+A != B, falso, A eh igual a B, mesmo valor. 
+
+
+!== compara se o valor e tipo de dados sao diferentes diferente 
+A = 10;
+B = "10" 
+
+A !== B, falso, A eh diferente de B, mesmo valor mas tipos diferentes, um eh numero e o outro carecter. 
+
+&& usado quando ha mais de uma condicao no if 
+(g == h && g === h) 
+
+
+
+
+
+*/    
+
+    if (a > b) {
+        console.log("'a' maior do que 'b'");
+    } else if (a < b) {
+        console.log("'a' menor do que 'b'");
+        
+    } else {
+        console.log("'a' igual a 'b'")
+    }
+
+    console.log("sempre executar")
+
+    var c = 40; 
+    var d = 50;
+    if (c >= d) {
+        console.log("'c' é maior ou igual a 'd'")
+    } if (c <= d) {
+        console.log("c' é menor ou igual a 'd'") 
+    }
+    var e = 10;
+    var f = "10";
+    var g = 11;
+    var h = "11";
+    var i = 20;
+    var j = "20";
+
+    if (e == f) {
+        console.log("'e' é igual a 'f'")
+    } 
+    
+    //"&&" usado quando ha mais de uma condicao no if, ambas as condicoes precisam ser verdadeiras para que a funcao seja executada (e)
+    // === compara valores e tipos de dados (ambas precisam ser ou numeral, ou string...)
+    if (g == h && g === h) {
+        console.log("o sistema comparou os valores e tipos de dados e constatou que 'g' é igual a 'h', possuem o mesmo valor e tipo de dado)");
+
+    }
+
+    //"&&" usado quando ha mais de uma condicao no if, ambas as condicoes precisam ser verdadeiras para que a funcao seja executada (e)
+    if (g == h && g !== h) {
+        console.log("o sistema comparou os valores e tipos de dados e constatou que 'g' é diferente de 'h','g' é um numeral e 'h' é um string,")
+    }
+
+    // "||" usado quando uma ou mais condicoes no if e/sao verdadeiras (ou), se ao menos uma condicao for atendida, entao o cohdigo eh executado. 
+    if (i == j || i === j) {
+        console.log("o sistema comparou os valores e tipos de dados e constatou que e é igual a f, possuem o mesmo valor e tipo de dado)");
+    }
+    </script>
+</body>
+</html>
