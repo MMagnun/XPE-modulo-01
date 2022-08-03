@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <script>
+        var carros = ["Gol", "Palio", "Uno"];
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+
+        console.log("Primeira posição: " + primeiroCarro);
+        console.log("Segunda posição: " + segundoCarro);
+        console.log("Terceira posição: " + terceiroCarro);
+
+        carros[2] = "Argo";
+        console.log(carros[2]);
+        
+        
+        //mostra a quantidade de itens no array carros (var carros)
+        console.log("Tamanho do Array " + carros.length);
+        console.log("O último elemento da lista é " + carros[carros.length - 1]);
+
+        carros[3] = "Sandero";
+        console.log("O último elemento da lista é " + carros[carros.length - 1]);
+        
+        carros[carros.length] = "Civic";
+        console.log("O último novo carro inserido na lista é o " + carros[carros.length - 1]);
+
+        //função .push insere um novo elemento após o último índice do array (insere no final da lista).
+        carros.push("Polo");
+        console.log(carros);
+
+        //função .pop remove o último elemento do array (final da lista) e exibe o nome do elemento removido.
+        console.log(carros.pop());
+        console.log(carros);
+
+        //insere um elemento no início da lista
+        carros.unshift("Jetta");
+        console.log(carros);
+        
+        //remove o primeiro elemento no início da lista.
+        console.log(carros.shift());
+        console.log(carros);
+
+    </script>
+</body>
+</html>

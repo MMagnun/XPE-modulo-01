@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Número</title>
+</head>
+<body>
+    <script>
+
+        /*
+        1 - Receber um número como parâmetro
+        2 - Executar um "for" na lista, e para cada elemento, verificar se é igual ao número buscado
+        3 - Quando encontrar, interromper a execução e retornar "true"
+        4 - Se chegar até o fim se encontrar o número, retornar "false"
+        */
+        
+
+        var lista = [17, 18, 15, 34, 67, 98, 05, 7, 18, 13];
+
+        function verificaNumero(numero) {
+            var existe = false;
+            for (var i = 0; i < lista.length; i++) {
+                console.log(i);
+                if (lista[i] === numero) {
+                    existe = true;
+                    break;
+                }
+            }
+            return existe;
+        }
+        
+    </script>
+    
+</body>
+</html>
